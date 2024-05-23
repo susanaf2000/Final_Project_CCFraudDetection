@@ -8,10 +8,10 @@ from sklearn.calibration import CalibratedClassifierCV
 app = FastAPI()
 
 # Load the trained models
-log_model = joblib.load('../CCFraud_project/logistic_regression_model.sav')
-rf_model = joblib.load('../CCFraud_project/random_forest_model.sav')
-svm_model = joblib.load('../CCFraud_project/svc_model.sav')
-fnn_model = joblib.load('../CCFraud_project/FNN_model.sav')
+log_model = joblib.load('../Final_Project_CCFraudDetection/logistic_regression_model.sav')
+rf_model = joblib.load('../Final_Project_CCFraudDetection/random_forest_model.sav')
+svm_model = joblib.load('../Final_Project_CCFraudDetection/svc_model.sav')
+fnn_model = joblib.load('../Final_Project_CCFraudDetection/FNN_model.sav')
 
 # Define the input data model
 class CreditCardTransaction(BaseModel):
